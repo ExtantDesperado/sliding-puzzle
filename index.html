@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles/engineStyles.css">
+		<link rel="stylesheet" type="text/css" href="styles/gameStyles.css">
+		<title>Engine Template</title>
+	</head>
+	<body>
+		<div class="active screen" id="homeScreen">
+			<h1>Slidy Puzzle Game</h1>
+			<div class="menu">
+				<button type="button" id="homeToNewGameButton">New Game</button>
+				<button type="button" id="homeToHighScoresButton">High Scores</button>
+				<button type="button" id="homeToCreditsButton">Credits</button>
+			</div>
+		</div>
+		<div class="screen" id="newGameScreen">
+			<h2>New Game</h2>
+			<div class="menu">
+				<button type="button" id="newGameToEasyButton">Easy</button>
+				<button type="button" id="newGameToHardButton">Hard</button>
+				<button type="button" id="newGameToHomeButton">Back</button>
+			</div>
+		</div>
+		<div class="screen" id="gameScreen">
+			<div id="statusBar">
+				<div id="timerDisplay"></div>
+				<div id="numMovesDisplay"></div>
+			</div>
+			<canvas id="canvas" height=512 width=512></canvas>
+			<button type="button" id="gameToHomeButton">Quit</button>
+		</div>
+		<div class="screen" id="highScoresScreen">
+			<h2>High Scores</h2>
+			<div id="tableContainer">
+				<table id="easyTable"></table>
+				<table id="hardTable"></table>
+			</div>
+			<button type="button" id="highScoresToHomeButton">Back</button>
+		</div>
+		<div class="screen" id="creditsScreen">
+			<h2>Credits</h2>
+			<p>Made by Garrett Johnson for the CS 5410 midterm.</p>
+			<button type="button" id="creditsToHomeButton">Back</button>
+		</div>
+
+		<script type="text/javascript" src="scripts/engine/engine.js"></script>
+		<script type="text/javascript" src="scripts/engine/random.js"></script>
+		<script type="text/javascript" src="scripts/engine/graphics.js"></script>
+		<script type="text/javascript" src="scripts/engine/storage.js"></script>
+		<script type="text/javascript" src="scripts/engine/audioManager.js"></script>
+		<script type="text/javascript" src="scripts/engine/inputManager.js"></script>
+		<script type="text/javascript" src="scripts/engine/particleManager.js"></script>
+		<script type="text/javascript" src="scripts/engine/screenManager.js"></script>
+		<script type="text/javascript" src="scripts/engine/gameLoop.js"></script>
+
+		<script type="text/javascript" src="scripts/midtermGame/game.js"></script>
+		<script type="text/javascript" src="scripts/midtermGame/model.js"></script>
+		<script type="text/javascript" src="scripts/midtermGame/screens.js"></script>
+	</body>
+</html>

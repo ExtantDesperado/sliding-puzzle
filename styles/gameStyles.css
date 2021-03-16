@@ -1,0 +1,75 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Lucida Console';
+}
+
+.screen {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.menu {
+	/*height: 50%;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*justify-content: space-between;*/
+}
+
+#statusBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+#timerDisplay, #numMovesDisplay {
+	width: 200px;
+	text-align: center;
+}
+
+#canvas {
+	height: 512px;
+	width: 512px;
+}
+
+button {
+	width: 200px;
+	height: 30px;
+	background-color: white;
+	border: solid black 1px;
+	border-radius: 5px;
+	margin: 5px;
+	outline: none;
+}
+
+button:hover {
+	background-color: silver;
+	margin: 0px;
+	width: 210px;
+	height: 40px;
+}
+
+#tableContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+table {
+	margin: 30px;
+}
+
+table, tr, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+th, td {
+	padding: 10px;
+}
